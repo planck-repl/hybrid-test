@@ -1,1 +1,2 @@
-{:paths ["src" "native"]}
+{:paths ["src" "native"]
+ :deps {planck {:mvn/version "2.23.0"}}}
