@@ -1,7 +1,7 @@
 (ns hybrid.core
   (:require [planck.io :as io]))
 
-(def ^:private so-path (:path (io/as-file (io/resource "libnative-macos-x86_64.so"))))
+(def ^:private so-path (:path (io/as-file (io/resource "macos/x86_64/hybrid-test.so"))))
 
 (def ^:private libnative (js/PLANCK_DLOPEN so-path))
 
