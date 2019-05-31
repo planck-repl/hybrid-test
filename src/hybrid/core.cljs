@@ -11,7 +11,7 @@
 (defn machine []
   (gobj/get (js/PLANCK_UNAME) "machine"))
 
-(def ^:private so-path (:path (io/as-file (io/resource (io/file (platform) (machine) "hybrid-test.so")))))
+(def ^:private so-path (:path (io/as-file (io/resource (:path (io/file (platform) (machine) "hybrid-test.so"))))))
 
 (def ^:private libnative (js/PLANCK_DLOPEN so-path))
 
