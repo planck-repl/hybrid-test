@@ -1,2 +1,4 @@
-{:paths ["src" "native"]
- :deps {planck {:mvn/version "2.23.0"}}}
+{:paths   ["src" "native"]
+ :deps    {planck {:mvn/version "2.23.0"}}
+ :aliases {:jar {:extra-deps {seancorfield/depstar {:mvn/version "0.2.1"}}
+                 :main-opts  ["-m" "hf.depstar.jar" "hybrid-test.jar"]}}}
